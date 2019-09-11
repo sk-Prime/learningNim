@@ -41,6 +41,10 @@ proc buttonClick() =
             inputedText= "Nameless"
     label.label= "Welcome Mr. " & inputedText
     label.fit()
+    var xs = 300
+    if len(inputedText) > 6:
+        xs = 15 * (len(inputedText) - 6) + 300
+    frame.size = (xs,160)
     layout()
 
 #window resize event callback
