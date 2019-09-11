@@ -43,7 +43,7 @@ proc buttonClick() =
     label.fit()
     layout()
 
-#window size resize event callback
+#window resize event callback
 panel.wEvent_Size do ():
     layout() #layout will resize widgets accordingly
 
